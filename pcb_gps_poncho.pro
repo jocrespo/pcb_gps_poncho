@@ -1,4 +1,4 @@
-update=lun 25 sep 2017 11:09:56 ART
+update=jue 28 sep 2017 15:12:50 ART
 version=1
 last_client=kicad
 [cvpcb]
@@ -24,11 +24,12 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.15
 ModuleOutlineThickness=0.15
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=../../kicad/libModelos;../../kicad/libPonchos
 [eeschema/libraries]
 LibName1=Misc_Poncho_Grande
 LibName2=Poncho_Esqueleto
-[general]
-version=1
+LibName3=libs/se868-a

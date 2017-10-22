@@ -1,4 +1,4 @@
-update=lun 09 oct 2017 13:09:45 ART
+update=jue 12 oct 2017 15:18:12 ART
 version=1
 last_client=kicad
 [cvpcb]
@@ -24,8 +24,6 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.15
 ModuleOutlineThickness=0.15
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
@@ -137,3 +135,5 @@ LibName104=contrib_symbols_dl1eic/Symbols_Microcontroller_Philips-NXP_RevA_06Oct
 LibName105=contrib_symbols_dl1eic/SymbolsSimilarEN60617+oldDIN617-RevE8
 LibName106=contrib_symbols_dl1eic/Symbols_Socket-DIN41612_RevA
 LibName107=contrib_symbols_dl1eic/Symbols_Transformer-Diskrete_RevA
+[general]
+version=1

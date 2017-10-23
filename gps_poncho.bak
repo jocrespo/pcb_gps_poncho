@@ -187,8 +187,6 @@ F 3 "" H 5400 1100 60  0000 C CNN
 	1    5400 1100
 	1    0    0    -1  
 $EndComp
-Text Notes 7250 6400 0    60   ~ 0
-Luego de abrir el nuevo proyecto:\n1)Editar datos del rótulo.\n2)Editar los archivos del subdirectorio "doc".\n2.1) Agregarse en el archivo de licencia.\n2.2) Colocar info mínima del Poncho en el LEEME.txt\n2.3) Colocar info mínima en el CAMBIOS.txt
 $Comp
 L Conn_Poncho2P_2x_20x2 XA101
 U 1 1 57A7A0F8
@@ -747,6 +745,17 @@ F 1 "GNDD" H 5000 5650 50  0000 C CNN
 F 2 "" H 5000 5800 50  0000 C CNN
 F 3 "" H 5000 5800 50  0000 C CNN
 	1    5000 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 59ED328C
+P 3950 7000
+F 0 "#PWR?" H 3950 6750 50  0001 C CNN
+F 1 "GNDD" H 3950 6850 50  0000 C CNN
+F 2 "" H 3950 7000 50  0000 C CNN
+F 3 "" H 3950 7000 50  0000 C CNN
+	1    3950 7000
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

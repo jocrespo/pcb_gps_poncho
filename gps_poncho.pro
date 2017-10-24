@@ -1,4 +1,4 @@
-update=mar 24 oct 2017 09:54:26 ART
+update=mar 24 oct 2017 11:17:58 ART
 version=1
 last_client=kicad
 [cvpcb]
@@ -24,18 +24,6 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.15
 ModuleOutlineThickness=0.15
-[general]
-version=1
-[eeschema]
-version=1
-LibDir=lib
-[eeschema/libraries]
-LibName1=gps_poncho-rescue
-LibName2=lib/basico
-LibName3=lib/se868-a
-LibName4=lib/led
-LibName5=lib/micro_sd_card
-LibName6=lib/resistor
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -46,3 +34,14 @@ NetFmtName=
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=60
+[eeschema]
+version=1
+LibDir=lib
+[eeschema/libraries]
+LibName1=lib/basico
+LibName2=lib/se868-a
+LibName3=lib/led
+LibName4=lib/micro_sd_card
+LibName5=lib/resistor
+[general]
+version=1

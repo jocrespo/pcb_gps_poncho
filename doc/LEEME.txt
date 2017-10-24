@@ -1,12 +1,15 @@
-TITULO PONCHO
+Poncho GPS datalogger
 =============
 
-<<Colocar información mínima y propósito del Poncho. La información completa puede estar en la wiki.>>
+URL: https://github.com/jocrespo/pcb_gps_poncho
+FUNCIÓN: Este circuito con formato de un poncho izquierdo incluye un modulo GPS para la utilizacion con la EDU-CIAA. Toma la alimentación del pin de 5V del conector P2. Puede incluir un conector de SD para uso como datalogger(aun en revisión)
+AUTORES/INSTITUCIONES: Jorge Crespo Romero
 
-URL: (URL en la wiki de la CIAA)
-FUNCIÓN: Para qué sirve el Poncho.
-AUTORES/INSTITUCIONES: 
-
-
-
-<<Detalle y explicación de directorios o archivos adicionales que se incorporen.>>
+ESTRUCTURA DEL PROYECTO:
+doc/ - Documentos de licencia y proyecto. Éste archivo
+datasheet/ - Recopilacion de datasheets de los componentes que integran el proyecto
+gerber/ - Archivos de gerber del proyecto
+gps_poncho.3dshapes/ - Archivos de modelado 3D
+gps_poncho.pretty/ - Archivos de footprint
+lib/ - Librerias de los componentes esquematicos
+tools/ - Herramientas de utilidad

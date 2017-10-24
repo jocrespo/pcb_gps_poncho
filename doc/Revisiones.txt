@@ -1,0 +1,2 @@
+Primera versión de esquematico - a2cbf80552da666f01dc42e181aa0f8fbad572f1 
+Se toman en cuenta correciones de Diego Brengi (23/10)

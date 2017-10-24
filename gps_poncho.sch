@@ -1,111 +1,9 @@
 EESchema Schematic File Version 2
 LIBS:basico
 LIBS:se868-a
-LIBS:sl876q5-a-telit
-LIBS:74xgxx
-LIBS:74xx
-LIBS:ac-dc
-LIBS:actel
-LIBS:adc-dac
-LIBS:allegro
-LIBS:Altera
-LIBS:analog_devices
-LIBS:analog_switches
-LIBS:atmel
-LIBS:audio
-LIBS:battery_management
-LIBS:bbd
-LIBS:bosch
-LIBS:brooktre
-LIBS:cmos4000
-LIBS:cmos_ieee
-LIBS:conn
-LIBS:contrib
-LIBS:cypress
-LIBS:dc-dc
-LIBS:device
-LIBS:digital-audio
-LIBS:diode
-LIBS:display
-LIBS:dsp
-LIBS:elec-unifil
-LIBS:ESD_Protection
-LIBS:ftdi
-LIBS:gennum
-LIBS:graphic_symbols
-LIBS:hc11
-LIBS:infineon
-LIBS:intel
-LIBS:interface
-LIBS:intersil
-LIBS:ir
-LIBS:Lattice
-LIBS:leds
-LIBS:LEM
-LIBS:linear
-LIBS:logic_programmable
-LIBS:maxim
-LIBS:mechanical
-LIBS:memory
-LIBS:microchip
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic24mcu
-LIBS:microchip_pic32mcu
-LIBS:microcontrollers
-LIBS:modules
-LIBS:motor_drivers
-LIBS:motorola
-LIBS:motors
-LIBS:msp430
-LIBS:nordicsemi
-LIBS:nxp
-LIBS:nxp_armmcu
-LIBS:onsemi
-LIBS:opto
-LIBS:Oscillators
-LIBS:philips
-LIBS:power
-LIBS:powerint
-LIBS:Power_Management
-LIBS:pspice
-LIBS:references
-LIBS:regul
-LIBS:relays
-LIBS:rfcom
-LIBS:RFSolutions
-LIBS:sensors
-LIBS:silabs
-LIBS:siliconi
-LIBS:stm8
-LIBS:stm32
-LIBS:supertex
-LIBS:switches
-LIBS:texas
-LIBS:transf
-LIBS:transistors
-LIBS:triac_thyristor
-LIBS:ttl_ieee
-LIBS:valves
-LIBS:video
-LIBS:wiznet
-LIBS:Worldsemi
-LIBS:Xicor
-LIBS:xilinx
-LIBS:zetex
-LIBS:Zilog
-LIBS:Symbols_DCDC-ACDC-Converter_RevC_20Jul2012
-LIBS:Symbols_EN60617_13Mar2013
-LIBS:Symbols_EN60617-10_HF-Radio_DRAFT_12Sep2013
-LIBS:Symbols_ICs-Diskrete_RevD10
-LIBS:Symbols_ICs-Opto_RevB_16Sep2013
-LIBS:Symbols_Microcontroller_Philips-NXP_RevA_06Oct2013
-LIBS:SymbolsSimilarEN60617+oldDIN617-RevE8
-LIBS:Symbols_Socket-DIN41612_RevA
-LIBS:Symbols_Transformer-Diskrete_RevA
+LIBS:led
+LIBS:micro_sd_card
+LIBS:resistor
 LIBS:gps_poncho-cache
 EELAYER 25 0
 EELAYER END
@@ -113,13 +11,13 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Poncho GPS datalogger"
-Date "2017-10-09"
+Date "2017-10-24"
 Rev "1.0"
 Comp "Proyecto CIAA - COMPUTADORA INDUSTRIAL ABIERTA ARGENTINA"
 Comment1 "https://github.com/jocrespo/pcb_gps_poncho"
 Comment2 "Autores y Licencia del modelo (Diego Brengi - UNLaM)"
-Comment3 "Autor del poncho: Jorge Crespo Romero"
-Comment4 ""
+Comment3 "Revisor: Ing. Sergio Sirota"
+Comment4 "Autor del poncho: Jorge Crespo Romero"
 $EndDescr
 $Comp
 L OSHWA #G2
@@ -224,32 +122,10 @@ F 3 "" H 3400 1200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3VP #PWR07
-U 1 1 57A7AA40
-P 3950 6650
-F 0 "#PWR07" H 4100 6600 50  0001 C CNN
-F 1 "+3.3VP" H 3950 6750 50  0000 C CNN
-F 2 "" H 3950 6650 50  0000 C CNN
-F 3 "" H 3950 6650 50  0000 C CNN
-	1    3950 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR08
-U 1 1 57A7AA61
-P 4250 6650
-F 0 "#PWR08" H 4250 6610 30  0001 C CNN
-F 1 "+3.3V" H 4250 6760 30  0000 C CNN
-F 2 "" H 4250 6650 60  0000 C CNN
-F 3 "" H 4250 6650 60  0000 C CNN
-	1    4250 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDD #PWR09
+L GNDD #PWR07
 U 1 1 57A7AB5F
 P 3550 3400
-F 0 "#PWR09" H 3550 3150 50  0001 C CNN
+F 0 "#PWR07" H 3550 3150 50  0001 C CNN
 F 1 "GNDD" H 3550 3250 50  0000 C CNN
 F 2 "" H 3550 3400 50  0000 C CNN
 F 3 "" H 3550 3400 50  0000 C CNN
@@ -257,21 +133,10 @@ F 3 "" H 3550 3400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR010
-U 1 1 57A7AD84
-P 9400 250
-F 0 "#PWR010" H 9400 0   50  0001 C CNN
-F 1 "GNDD" H 9400 100 50  0000 C CNN
-F 2 "" H 9400 250 50  0000 C CNN
-F 3 "" H 9400 250 50  0000 C CNN
-	1    9400 250 
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR011
+L GND #PWR08
 U 1 1 57A7ADB5
 P 4250 7000
-F 0 "#PWR011" H 4250 7000 30  0001 C CNN
+F 0 "#PWR08" H 4250 7000 30  0001 C CNN
 F 1 "GND" H 4250 6930 30  0001 C CNN
 F 2 "" H 4250 7000 60  0000 C CNN
 F 3 "" H 4250 7000 60  0000 C CNN
@@ -322,31 +187,10 @@ NoConn ~ 2650 5500
 NoConn ~ 2650 5600
 NoConn ~ 2650 4100
 $Comp
-L SE868-A U11
-U 1 1 59DC016D
-P 7950 3900
-F 0 "U11" H 7850 4950 60  0000 C CNN
-F 1 "SE868-A" H 7850 4800 60  0000 C CNN
-F 2 "" H 7850 4800 60  0001 C CNN
-F 3 "" H 7850 4800 60  0001 C CNN
-F 4 "Telit" H 7950 3900 60  0001 C CNN "Manf"
-F 5 "sfdf" H 7950 3900 60  0001 C CNN "Manf#"
-F 6 "sd" H 7950 3900 60  0001 C CNN "DigiKey#"
-	1    7950 3900
-	1    0    0    -1  
-$EndComp
-NoConn ~ 7150 3850
-NoConn ~ 7150 3550
-NoConn ~ 8600 3850
-NoConn ~ 8600 4050
-NoConn ~ 8600 4150
-NoConn ~ 7150 4650
-NoConn ~ 7150 4450
-$Comp
-L +3.3V #PWR014
+L +3.3V #PWR09
 U 1 1 59E3E593
 P 5000 4900
-F 0 "#PWR014" H 5000 4860 30  0001 C CNN
+F 0 "#PWR09" H 5000 4860 30  0001 C CNN
 F 1 "+3.3V" H 5000 5010 30  0000 C CNN
 F 2 "" H 5000 4900 60  0000 C CNN
 F 3 "" H 5000 4900 60  0000 C CNN
@@ -395,21 +239,124 @@ F 6 "WM3288TR-ND" H 7900 1600 60  0001 C CNN "DigiKey#"
 	1    7900 1600
 	1    0    0    -1  
 $EndComp
-NoConn ~ 7150 3250
-NoConn ~ 7150 3350
-NoConn ~ 7150 3450
-NoConn ~ 8600 3250
-NoConn ~ 8600 3450
-NoConn ~ 7150 4250
-NoConn ~ 7150 4350
-NoConn ~ 8600 4250
-NoConn ~ 8600 3750
-NoConn ~ 8600 3650
-NoConn ~ 8600 3150
-NoConn ~ 7150 4050
-NoConn ~ 7150 4150
 NoConn ~ 7000 1300
 NoConn ~ 7000 2000
+$Comp
+L +3.3VP #PWR010
+U 1 1 59ED5F1E
+P 5900 1250
+F 0 "#PWR010" H 6050 1200 50  0001 C CNN
+F 1 "+3.3VP" H 5900 1350 50  0000 C CNN
+F 2 "" H 5900 1250 50  0000 C CNN
+F 3 "" H 5900 1250 50  0000 C CNN
+	1    5900 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3VP #PWR011
+U 1 1 59ED63AA
+P 8750 2900
+F 0 "#PWR011" H 8900 2850 50  0001 C CNN
+F 1 "+3.3VP" H 8750 3000 50  0000 C CNN
+F 2 "" H 8750 2900 50  0000 C CNN
+F 3 "" H 8750 2900 50  0000 C CNN
+	1    8750 2900
+	1    0    0    -1  
+$EndComp
+Text Label 3250 2250 2    50   ~ 0
+SPI_MOSI
+Text Label 6800 3400 2    50   ~ 0
+SPI_MOSI
+$Comp
+L GNDD #PWR012
+U 1 1 59ED4E1A
+P 6850 4800
+F 0 "#PWR012" H 6850 4550 50  0001 C CNN
+F 1 "GNDD" H 6850 4650 50  0000 C CNN
+F 2 "" H 6850 4800 50  0000 C CNN
+F 3 "" H 6850 4800 50  0000 C CNN
+	1    6850 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR014
+U 1 1 59ED501C
+P 5900 1900
+F 0 "#PWR014" H 5900 1650 50  0001 C CNN
+F 1 "GNDD" H 5900 1750 50  0000 C CNN
+F 2 "" H 5900 1900 50  0000 C CNN
+F 3 "" H 5900 1900 50  0000 C CNN
+	1    5900 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR016
+U 1 1 59ED7967
+P 5000 5800
+F 0 "#PWR016" H 5000 5550 50  0001 C CNN
+F 1 "GNDD" H 5000 5650 50  0000 C CNN
+F 2 "" H 5000 5800 50  0000 C CNN
+F 3 "" H 5000 5800 50  0000 C CNN
+	1    5000 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR017
+U 1 1 59ED328C
+P 3950 7000
+F 0 "#PWR017" H 3950 6750 50  0001 C CNN
+F 1 "GNDD" H 3950 6850 50  0000 C CNN
+F 2 "" H 3950 7000 50  0000 C CNN
+F 3 "" H 3950 7000 50  0000 C CNN
+	1    3950 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_Poncho2P_2x_20x2 XA101
+U 1 1 57A7A0F8
+P 1700 4200
+F 0 "XA101" H 2000 4600 60  0000 C CNN
+F 1 "Conn_Poncho2P_2x_20x2" H 2050 2500 60  0000 C CNN
+F 2 "footprint:Conn_Poncho_SinBorde" H 1700 4200 60  0001 C CNN
+F 3 "" H 1700 4200 60  0000 C CNN
+F 4 "Harwin" H 1700 4200 60  0001 C CNN "Manf"
+F 5 "M50-3502042" H 1700 4200 60  0001 C CNN "Manf#"
+F 6 "952-1387-ND" H 1700 4200 60  0001 C CNN "Digikey#"
+	1    1700 4200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2650 4200
+NoConn ~ 2650 4300
+NoConn ~ 2650 4400
+NoConn ~ 2650 4500
+NoConn ~ 2650 4600
+NoConn ~ 2650 4700
+NoConn ~ 1450 4200
+$Comp
+L GNDD #PWR?
+U 1 1 59EF6847
+P 8900 2250
+F 0 "#PWR?" H 8900 2000 50  0001 C CNN
+F 1 "GNDD" H 8900 2100 50  0000 C CNN
+F 2 "" H 8900 2250 50  0000 C CNN
+F 3 "" H 8900 2250 50  0000 C CNN
+	1    8900 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L SE868-A U11
+U 1 1 59EF70D0
+P 7900 3850
+F 0 "U11" H 7800 4900 60  0000 C CNN
+F 1 "SE868K3-A" H 7800 4750 60  0000 C CNN
+F 2 "" H 7800 4750 60  0001 C CNN
+F 3 "" H 7800 4750 60  0001 C CNN
+F 4 "Telit" H 7900 3850 60  0001 C CNN "Manf"
+F 5 "SE868K3A220R001" H 7900 3850 60  0001 C CNN "Manf#"
+F 6 "1:$11.71" H 7900 3850 60  0001 C CNN "kicost:pricing"
+	1    7900 3850
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	2850 4000 2850 6000
 Wire Wire Line
@@ -476,12 +423,6 @@ Connection ~ 3550 1550
 Wire Wire Line
 	3250 3250 3250 3200
 Wire Wire Line
-	3950 6650 3950 6700
-Wire Wire Line
-	3950 6700 4250 6700
-Wire Wire Line
-	4250 6700 4250 6650
-Wire Wire Line
 	3950 7000 3950 6900
 Wire Wire Line
 	4250 6900 4250 7000
@@ -497,26 +438,6 @@ Wire Wire Line
 	5400 1350 5400 1100
 Wire Wire Line
 	2650 5800 2850 5800
-Wire Wire Line
-	7150 3150 6800 3150
-Wire Wire Line
-	6800 3150 6800 4800
-Wire Wire Line
-	7150 3950 6800 3950
-Connection ~ 6800 3950
-Wire Wire Line
-	7150 3750 6800 3750
-Connection ~ 6800 3750
-Wire Wire Line
-	7150 3650 6800 3650
-Connection ~ 6800 3650
-Wire Wire Line
-	8600 3550 9400 3550
-Wire Wire Line
-	9400 3550 9400 4800
-Wire Wire Line
-	8600 4550 9400 4550
-Connection ~ 9400 4550
 Wire Wire Line
 	2650 3900 2850 3900
 Wire Wire Line
@@ -536,98 +457,17 @@ Wire Wire Line
 Wire Wire Line
 	8900 2200 8900 2250
 Wire Wire Line
-	7000 1800 6600 1800
+	5900 1800 7000 1800
 Wire Wire Line
-	6600 1800 6600 1900
-Wire Wire Line
-	8600 3950 9300 3950
-Wire Wire Line
-	9300 4650 9300 3850
-Wire Wire Line
-	8600 4650 9300 4650
-Connection ~ 9300 3950
-Wire Wire Line
-	4950 2150 6800 2150
-Wire Wire Line
-	9050 4450 8600 4450
-Wire Wire Line
-	9050 2550 9050 4450
-Wire Wire Line
-	8800 4350 8600 4350
-Wire Wire Line
-	8800 2750 8800 4350
-Wire Wire Line
-	4950 2250 5900 2250
-Wire Wire Line
-	5900 2750 8800 2750
-Wire Wire Line
-	9050 2550 6300 2550
-Wire Wire Line
-	7150 4550 5900 4550
-Wire Wire Line
-	5900 4550 5900 3850
-Wire Wire Line
-	7000 1900 6800 1900
-Wire Wire Line
-	6800 1900 6800 2150
-Wire Wire Line
-	6300 2550 6300 2150
-Connection ~ 6300 2150
-Wire Wire Line
-	7000 1700 5900 1700
-Wire Wire Line
-	5900 1700 5900 2750
-Connection ~ 5900 2250
+	6650 1900 7000 1900
 Wire Wire Line
 	5900 1600 7000 1600
 Wire Wire Line
 	5900 1600 5900 1250
-$Comp
-L +3.3VP #PWR015
-U 1 1 59ED5F1E
-P 5900 1250
-F 0 "#PWR015" H 6050 1200 50  0001 C CNN
-F 1 "+3.3VP" H 5900 1350 50  0000 C CNN
-F 2 "" H 5900 1250 50  0000 C CNN
-F 3 "" H 5900 1250 50  0000 C CNN
-	1    5900 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3VP #PWR016
-U 1 1 59ED63AA
-P 9300 3850
-F 0 "#PWR016" H 9450 3800 50  0001 C CNN
-F 1 "+3.3VP" H 9300 3950 50  0000 C CNN
-F 2 "" H 9300 3850 50  0000 C CNN
-F 3 "" H 9300 3850 50  0000 C CNN
-	1    9300 3850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6300 1500 7000 1500
-Wire Wire Line
-	6300 1500 6300 1350
 Wire Wire Line
 	3750 2350 3250 2350
 Wire Wire Line
 	3250 2350 3250 2250
-Text Label 3250 2250 2    50   ~ 0
-SPI_MOSI
-Text Label 5900 3850 0    50   ~ 0
-SPI_MOSI
-Text Label 6300 1350 0    50   ~ 0
-SPI_MOSI
-Wire Wire Line
-	8600 3350 8700 3350
-Wire Wire Line
-	8700 3350 8700 2900
-Wire Wire Line
-	8700 2900 5700 2900
-Wire Wire Line
-	4950 2950 5700 2950
-Wire Wire Line
-	5700 2950 5700 2900
 Wire Wire Line
 	7000 1400 6800 1400
 Wire Wire Line
@@ -638,91 +478,86 @@ Wire Wire Line
 	5600 950  5600 2850
 Wire Wire Line
 	5600 2850 4950 2850
-$Comp
-L GNDD #PWR017
-U 1 1 59ED4E1A
-P 6800 4800
-F 0 "#PWR017" H 6800 4550 50  0001 C CNN
-F 1 "GNDD" H 6800 4650 50  0000 C CNN
-F 2 "" H 6800 4800 50  0000 C CNN
-F 3 "" H 6800 4800 50  0000 C CNN
-	1    6800 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDD #PWR018
-U 1 1 59ED4FFF
-P 9400 4800
-F 0 "#PWR018" H 9400 4550 50  0001 C CNN
-F 1 "GNDD" H 9400 4650 50  0000 C CNN
-F 2 "" H 9400 4800 50  0000 C CNN
-F 3 "" H 9400 4800 50  0000 C CNN
-	1    9400 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDD #PWR019
-U 1 1 59ED501C
-P 6600 1900
-F 0 "#PWR019" H 6600 1650 50  0001 C CNN
-F 1 "GNDD" H 6600 1750 50  0000 C CNN
-F 2 "" H 6600 1900 50  0000 C CNN
-F 3 "" H 6600 1900 50  0000 C CNN
-	1    6600 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDD #PWR020
-U 1 1 59ED542D
-P 8900 2250
-F 0 "#PWR020" H 8900 2000 50  0001 C CNN
-F 1 "GNDD" H 8900 2100 50  0000 C CNN
-F 2 "" H 8900 2250 50  0000 C CNN
-F 3 "" H 8900 2250 50  0000 C CNN
-	1    8900 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDD #PWR021
-U 1 1 59ED7967
-P 5000 5800
-F 0 "#PWR021" H 5000 5550 50  0001 C CNN
-F 1 "GNDD" H 5000 5650 50  0000 C CNN
-F 2 "" H 5000 5800 50  0000 C CNN
-F 3 "" H 5000 5800 50  0000 C CNN
-	1    5000 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDD #PWR022
-U 1 1 59ED328C
-P 3950 7000
-F 0 "#PWR022" H 3950 6750 50  0001 C CNN
-F 1 "GNDD" H 3950 6850 50  0000 C CNN
-F 2 "" H 3950 7000 50  0000 C CNN
-F 3 "" H 3950 7000 50  0000 C CNN
-	1    3950 7000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Conn_Poncho2P_2x_20x2 XA101
-U 1 1 57A7A0F8
-P 1700 4200
-F 0 "XA101" H 2000 4600 60  0000 C CNN
-F 1 "Conn_Poncho2P_2x_20x2" H 2050 2500 60  0000 C CNN
-F 2 "footprint:Conn_Poncho_SinBorde" H 1700 4200 60  0001 C CNN
-F 3 "" H 1700 4200 60  0000 C CNN
-F 4 "Harwin" H 1700 4200 60  0001 C CNN "Manf"
-F 5 "M50-3502042" H 1700 4200 60  0001 C CNN "Manf#"
-F 6 "952-1387-ND" H 1700 4200 60  0001 C CNN "Digikey#"
-	1    1700 4200
-	1    0    0    -1  
-$EndComp
-NoConn ~ 2650 4200
-NoConn ~ 2650 4300
-NoConn ~ 2650 4400
-NoConn ~ 2650 4500
-NoConn ~ 2650 4600
-NoConn ~ 2650 4700
-NoConn ~ 1450 4200
+Wire Wire Line
+	8750 2900 8750 3200
+Wire Wire Line
+	8750 3200 8550 3200
+Wire Wire Line
+	8550 3100 8750 3100
+Connection ~ 8750 3100
+Wire Wire Line
+	7100 4100 6850 4100
+Wire Wire Line
+	6850 4100 6850 4800
+Wire Wire Line
+	7100 4200 6850 4200
+Connection ~ 6850 4200
+Wire Wire Line
+	7100 4300 6850 4300
+Connection ~ 6850 4300
+Wire Wire Line
+	7100 4400 6850 4400
+Connection ~ 6850 4400
+Wire Wire Line
+	7100 4500 6850 4500
+Connection ~ 6850 4500
+Wire Wire Line
+	7100 4600 6850 4600
+Connection ~ 6850 4600
+NoConn ~ 8550 3300
+NoConn ~ 8550 3400
+NoConn ~ 8550 3500
+NoConn ~ 8550 3600
+NoConn ~ 8550 3700
+NoConn ~ 8550 3800
+NoConn ~ 8550 3900
+NoConn ~ 8550 4000
+NoConn ~ 8550 4100
+NoConn ~ 8550 4200
+NoConn ~ 8550 4300
+NoConn ~ 8550 4400
+NoConn ~ 8550 4500
+NoConn ~ 8550 4600
+NoConn ~ 7100 4000
+NoConn ~ 7100 3900
+NoConn ~ 7100 3800
+NoConn ~ 7100 3700
+NoConn ~ 7100 3600
+NoConn ~ 7100 3500
+Wire Wire Line
+	7100 3400 6800 3400
+Wire Wire Line
+	7100 3300 5150 3300
+Wire Wire Line
+	5150 3300 5150 2950
+Wire Wire Line
+	5150 2950 4950 2950
+Text Label 6650 1900 2    50   ~ 0
+SPI_MISO
+Text Label 6800 3100 2    50   ~ 0
+SPI_MISO
+Text Label 5150 2150 0    50   ~ 0
+SPI_MISO
+Wire Wire Line
+	6800 3100 7100 3100
+Wire Wire Line
+	7100 3200 6800 3200
+Wire Wire Line
+	4950 2150 5150 2150
+Wire Wire Line
+	4950 2250 5150 2250
+Text Label 6800 3200 2    50   ~ 0
+SPI_CLK
+Text Label 5150 2250 0    50   ~ 0
+SPI_CLK
+Text Label 6650 1700 2    50   ~ 0
+SPI_CLK
+Text Label 6650 1500 2    50   ~ 0
+SPI_MOSI
+Wire Wire Line
+	7000 1500 6650 1500
+Wire Wire Line
+	6650 1700 7000 1700
+Wire Wire Line
+	5900 1800 5900 1900
 $EndSCHEMATC

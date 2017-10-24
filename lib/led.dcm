@@ -1,8 +1,8 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP SL876Q5-A-Telit
-D Telit GPS module
-K GPS
+$CMP LED
+D LED generic
+K led diode
 $ENDCMP
 #
 #End Doc Library

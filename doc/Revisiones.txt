@@ -1,2 +1,6 @@
 Primera versión de esquematico - a2cbf80552da666f01dc42e181aa0f8fbad572f1 
 Se toman en cuenta correciones de Diego Brengi (23/10)
+Se añaden pcb footprints
+Se añade proteccion esd en funcion de las correcciones de Victor Stalla de esquematico
+Se cambia slot de sd card
+

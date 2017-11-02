@@ -107,7 +107,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Poncho GPS datalogger"
-Date "2017-10-24"
+Date "2017-10-31"
 Rev "1.0"
 Comp "Proyecto CIAA - COMPUTADORA INDUSTRIAL ABIERTA ARGENTINA"
 Comment1 "https://github.com/jocrespo/pcb_gps_poncho"

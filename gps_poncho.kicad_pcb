@@ -3,7 +3,7 @@
   (general
     (links 51)
     (no_connects 0)
-    (area 59.614999 80.569999 145.490001 141.045001)
+    (area 56 15.774999 279.500001 145.750001)
     (thickness 1.6)
     (drawings 18)
     (tracks 128)
@@ -15,7 +15,7 @@
   (page A4)
   (title_block
     (title "Poncho GPS datalogger")
-    (date 2017-10-31)
+    (date 2017-11-10)
     (rev 1.0)
     (company "Proyecto CIAA - COMPUTADORA INDUSTRIAL ABIERTA ARGENTINA")
     (comment 1 https://github.com/jocrespo/pcb_gps_poncho)
@@ -48,7 +48,7 @@
   )
 
   (setup
-    (last_trace_width 0.254)
+    (last_trace_width 0.381)
     (user_trace_width 0.254)
     (user_trace_width 0.6)
     (user_trace_width 0.6)
@@ -1292,10 +1292,10 @@
   (gr_line (start 145.415 140.97) (end 121.92 140.97) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 145.415 80.645) (end 145.415 140.97) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 59.69 80.645) (end 145.415 80.645) (angle 90) (layer Edge.Cuts) (width 0.15))
-  (gr_text "Diseño dos capas\n\nRutas de 15 mils\n\nTener en cuenta los limites de la capacitancia de la proteccion ESD \npara determinacion de la velocidad maxima del bus SPI\n" (at 194.945 24.13) (layer Dwgs.User)
+  (gr_text "Diseño dos capas\n\nRutas de 15 mils\n\nCon una frecuencia de clock en spi de máxima 5MHz no deberían \ndar problemas la diferencia de longitud entre lineas SPI \n(MOSI,MISO) respecto a su clock \nni el valor de la capacitancia de la proteccion ESD." (at 190.945 31.13) (layer Dwgs.User)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
   )
-  (gr_text STACK-UP (at 227.965 19.05) (layer Dwgs.User)
+  (gr_text STACK-UP (at 227.465 19.8) (layer Dwgs.User)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_line (start 278.765 16.51) (end 186.69 16.51) (angle 90) (layer Dwgs.User) (width 0.2))
